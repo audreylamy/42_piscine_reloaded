@@ -6,11 +6,11 @@
 /*   By: alamy <alamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/07 15:21:22 by alamy             #+#    #+#             */
-/*   Updated: 2017/11/07 15:51:18 by alamy            ###   ########.fr       */
+/*   Updated: 2017/11/08 14:26:14 by alamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_ABS_H
 # define FT_ABS_H
-# define ABS(Value) (value < 0) ? -(value) : (value)
+# define ABS(Value) ((Value) < 0 ? -(Value) : (Value))
 #endif

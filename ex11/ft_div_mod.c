@@ -1,35 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alamy <alamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/07 14:23:18 by alamy             #+#    #+#             */
-/*   Updated: 2017/11/08 13:54:02 by alamy            ###   ########.fr       */
+/*   Created: 2017/11/06 18:41:49 by alamy             #+#    #+#             */
+/*   Updated: 2017/11/07 09:48:11 by alamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-char		*ft_strdup(char *src)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	char	*s1;
-	int		i;
-	int		len;
-
-	len = 0;
-	i = 0;
-	if (!src)
-		return (NULL);
-	while (src[len])
-		len++;
-	s1 = (char *)malloc(sizeof(*s1) * (len + 1));
-	while (i < len)
-	{
-		s1[i] = src[i];
-		i++;
-	}
-	s1[i] = '\0';
-	return (s1);
+	*div = a / b;
+	*mod = a % b;
 }

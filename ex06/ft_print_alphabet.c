@@ -6,16 +6,11 @@
 /*   By: alamy <alamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/06 16:06:05 by alamy             #+#    #+#             */
-/*   Updated: 2017/11/06 18:33:58 by alamy            ###   ########.fr       */
+/*   Updated: 2017/11/07 09:14:43 by alamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_print_alphabet(void)
 {

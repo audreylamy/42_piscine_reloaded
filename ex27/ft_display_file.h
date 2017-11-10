@@ -1,35 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_display_file.h                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alamy <alamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/07 14:23:18 by alamy             #+#    #+#             */
-/*   Updated: 2017/11/08 13:54:02 by alamy            ###   ########.fr       */
+/*   Created: 2017/11/08 09:48:49 by alamy             #+#    #+#             */
+/*   Updated: 2017/11/08 09:59:15 by alamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#ifndef FT_DISPLAY_FILE_H
+# define FT_DISPLAY_FILE_H
 
-char		*ft_strdup(char *src)
-{
-	char	*s1;
-	int		i;
-	int		len;
+# include <unistd.h>
+# include <sys/types.h>
+# include <sys/stat.h>
+# include <fcntl.h>
 
-	len = 0;
-	i = 0;
-	if (!src)
-		return (NULL);
-	while (src[len])
-		len++;
-	s1 = (char *)malloc(sizeof(*s1) * (len + 1));
-	while (i < len)
-	{
-		s1[i] = src[i];
-		i++;
-	}
-	s1[i] = '\0';
-	return (s1);
-}
+#endif
